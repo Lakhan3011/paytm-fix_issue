@@ -27,7 +27,11 @@ export default async function () {
         <SendCard />
 
         <div className="flex items-center">
-          <OnRampTransactions transactions={transactions} heading="Send INR" />
+          <OnRampTransactions
+            transactions={transactions}
+            heading="Send INR"
+            sign="-"
+          />
         </div>
       </div>
     </div>

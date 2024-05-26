@@ -3,6 +3,7 @@ import { Card } from "@repo/ui/card";
 export const OnRampTransactions = ({
   transactions,
   heading,
+  sign,
 }: {
   transactions: {
     time: Date;
@@ -12,6 +13,7 @@ export const OnRampTransactions = ({
     provider: string;
   }[];
   heading: string;
+  sign: string;
 }) => {
   if (!transactions.length) {
     return (
@@ -32,7 +34,7 @@ export const OnRampTransactions = ({
               </div>
             </div>
             <div className="flex flex-col justify-center">
-              + Rs {t.amount / 100}
+              {sign} Rs {t.amount / 100}
             </div>
           </div>
         ))}

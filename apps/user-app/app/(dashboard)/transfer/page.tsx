@@ -52,6 +52,7 @@ export default async function () {
             <OnRampTransactions
               transactions={transactions}
               heading="Received INR"
+              sign="+"
             />
           </div>
         </div>
