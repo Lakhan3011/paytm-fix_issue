@@ -39,6 +39,7 @@ export function SendCard() {
                       alert(res.message);
                     } else {
                       router.push("/transfer");
+                      router.refresh();
                     }
                   } catch (error) {
                     alert("Insufficient Fund");
