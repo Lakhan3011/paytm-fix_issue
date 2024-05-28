@@ -22,7 +22,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./docker/Dockerfile.user
+          file: ./docker/DockerFile.user
           push: true
           tags: lakhandev/fast-funds:latest # Replace with your Docker Hub username and repository
 
